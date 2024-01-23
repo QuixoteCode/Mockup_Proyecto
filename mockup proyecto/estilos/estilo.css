@@ -1,0 +1,46 @@
+header {
+
+    display: flex;
+
+}
+
+.contenidoHeader {
+
+    margin-left: 80px;
+
+}
+
+#primeraLineaProductos {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.estilosProductos {
+
+    width: 250px;
+
+}
+
+
+.iconosContenidoHeader {
+
+    width: 15px;
+
+}
+
+nav {
+    margin-left:200px;
+    margin-right:200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.delimitadoresMenuNavegacion {
+
+    font-size: 50px;
+
+}

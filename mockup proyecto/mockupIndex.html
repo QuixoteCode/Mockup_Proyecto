@@ -4,40 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Eyes</title>
-
-    <style>
-        img {
-            width: 250px;
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="estilos/estilo.css">
 </head>
 <body>
     
     <section>
-        <form>
-            <!--ICONO LUPA-->
+        <form class="contenidoHeader">
             <input type="text">
-            <input type="submit" value="Buscar">
+            <!--https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid-->
+            <button class="botonBusqueda"><img src="imagenes/magnifying-glass-solid.svg" class="iconosContenidoHeader">Buscar</button>
+            <!--Utilizamos el icono en formato .svg de un carrito de la compra de font-awesome, para más información: https://fontawesome.com/icons/cart-shopping?f=classic&s=duotone-->
+            <!--QUIZA SACARLO EL BOTON DE LA CESTA DEL FORM-->
+            <button class="botonCesta"><img src="imagenes/cart-shopping-solid.svg" class="iconosContenidoHeader">Cesta</button>
         </form>
     </section>
 
     <nav>
-        <a href="">Novedades | </a>
-        <a href="">Deseados | </a>
+        <a href="">Novedades</a>
+        <p class="delimitadoresMenuNavegacion">|</p>
+        <a href="">Deseados</a>
+        <p class="delimitadoresMenuNavegacion">|</p>
         <a href="">Perfil</a>
+        <p class="delimitadoresMenuNavegacion">|</p>
+        <a href="">Foro</a>
     </nav>
 
     <h2>Más vendidos</h2>
 
     <section id="primeraLineaProductos">
-        <img src="imagenes/producto1.png" alt="producto1">
-        <figcaption>Colonos de Catán</figcaption>
-        <img src="imagenes/producto2.png" alt="producto2">
-        <figcaption>Risk</figcaption>
-        <img src="" alt="producto3">
-        <figcaption></figcaption>
+        <!--Necesitamos diferentes sections para que el que el CSS de #primeraLineaProductos no interprete cada img y su figcaption como un elemento individual sino que los considere juntos-->
+        <section>
+            <!--QUEDA PONER PRECIO Y VENDEDOR-->
+            <img src="imagenes/producto1.png" alt="producto1" class="estilosProductos">
+            <figcaption>Colonos de Catán</figcaption>
+        </section>
+        <section>
+            <img src="imagenes/producto2.png" alt="producto2" class="estilosProductos">
+            <figcaption>Risk</figcaption>
+        </section>
+        <section>
+            <img src="imagenes/producto3.png" alt="producto3" class="estilosProductos">
+            <figcaption>Baraja Española</figcaption>
+        </section>
     </section>
 
 
