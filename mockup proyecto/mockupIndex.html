@@ -3,48 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Eyes</title>
+    <title>&#127922;Snake Eyes&#127922;</title>
     <link rel="stylesheet" href="estilos/estilo.css">
 </head>
 <body>
     
-    <section>
-        <form class="contenidoHeader">
-            <input type="text">
-            <!--https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid-->
-            <button class="botonBusqueda"><img src="imagenes/magnifying-glass-solid.svg" class="iconosContenidoHeader">Buscar</button>
-            <!--Utilizamos el icono en formato .svg de un carrito de la compra de font-awesome, para más información: https://fontawesome.com/icons/cart-shopping?f=classic&s=duotone-->
-            <!--QUIZA SACARLO EL BOTON DE LA CESTA DEL FORM-->
-            <button class="botonCesta"><img src="imagenes/cart-shopping-solid.svg" class="iconosContenidoHeader">Cesta</button>
-        </form>
-    </section>
+    
 
     <nav>
-        <a href="">Novedades</a>
+        <img src="imagenes/logotipov2.png" id="logo">
+            <!--https://icons.getbootstrap.com/icons/newspaper/-->
+        <a href="" class="linkMenuNavegacion">Novedades<br>&nbsp;<img src="imagenes/newspaper.svg" class="iconoMenuNavegacion"></a>
         <p class="delimitadoresMenuNavegacion">|</p>
-        <a href="">Deseados</a>
+            <!--https://icons.getbootstrap.com/icons/suit-heart-fill/-->
+        <a href="" class="linkMenuNavegacion">Deseados<br>&nbsp;<img src="imagenes/suit-heart-fill.svg" class="iconoMenuNavegacion"></a>
         <p class="delimitadoresMenuNavegacion">|</p>
-        <a href="">Perfil</a>
+            <!--https://icons.getbootstrap.com/icons/person-circle/-->
+        <a href="" class="linkMenuNavegacion">&nbsp;Perfil&nbsp;<br><img src="imagenes/person-circle.svg" class="iconoMenuNavegacion"></a>
         <p class="delimitadoresMenuNavegacion">|</p>
-        <a href="">Foro</a>
+            <!--https://icons.getbootstrap.com/icons/pencil-square/-->
+        <a href="" class="linkMenuNavegacion">&nbsp;&nbsp;Foro&nbsp;&nbsp;<br><img src="imagenes/pencil-square.svg" class="iconoMenuNavegacion"></a>
     </nav>
 
-    <h2>Más vendidos</h2>
+    <header>
+        <form>
+            <input type="text" id="barraBusqueda">
+            <!--https://fontawesome.com/icons/magnifying-glass?f=classic&s=solid-->
+            <button id="botonBusqueda"><img src="imagenes/magnifying-glass-solid.svg" class="iconosContenidoHeader">Buscar</button>
+            <!--Utilizamos el icono en formato .svg de un carrito de la compra de font-awesome, para más información: https://fontawesome.com/icons/cart-shopping?f=classic&s=duotone-->
+            <!--QUIZA SACARLO EL BOTON DE LA CESTA DEL FORM-->
+            <button id="botonCesta"><img src="imagenes/cart-shopping-solid.svg" class="iconosContenidoHeader">Cesta</button>
+        </form>
+    </header>
+
+    <h2>&#129351; MÁS VENDIDOS &#129351;</h2>
 
     <section id="primeraLineaProductos">
         <!--Necesitamos diferentes sections para que el que el CSS de #primeraLineaProductos no interprete cada img y su figcaption como un elemento individual sino que los considere juntos-->
-        <section>
-            <!--QUEDA PONER PRECIO Y VENDEDOR-->
+        <section id="sectionProducto1">
             <img src="imagenes/producto1.png" alt="producto1" class="estilosProductos">
-            <figcaption>Colonos de Catán</figcaption>
+            <figcaption>&#127922; Colonos de Catán &#127922;</figcaption>
+            <p class="autorProducto">&#127917; Devir &#127917;</p>
+            <span class="spanPrecio">
+                <p class="precioProducto">42,49€</p> <img src="imagenes/cart-shopping-solid.svg" class="iconosSpanPrecio">
+            </span>
         </section>
-        <section>
+        <section id="sectionProducto2">
             <img src="imagenes/producto2.png" alt="producto2" class="estilosProductos">
-            <figcaption>Risk</figcaption>
+            <figcaption>&#127922; Risk &#127922;</figcaption>
+            <p class="autorProducto">&#127917; Hasbro Gaming &#127917;</p>
+            <span class="spanPrecio">
+                <p class="precioProducto">34,98€</p> <img src="imagenes/cart-shopping-solid.svg" class="iconosSpanPrecio">
+            </span>
         </section>
-        <section>
+        <section id="sectionProducto3">
             <img src="imagenes/producto3.png" alt="producto3" class="estilosProductos">
-            <figcaption>Baraja Española</figcaption>
+            <figcaption>&#127922; Baraja Española &#127922;</figcaption>
+            <p class="autorProducto">&#127917; Heraclio Fournier &#127917;</p>
+            <span class="spanPrecio">
+                <p class="precioProducto">5,49€</p> <img src="imagenes/cart-shopping-solid.svg" class="iconosSpanPrecio">
+            </span>
+        </section>
+        <section id="sectionProducto4">
+            <img src="imagenes/producto4.png" alt="producto4" class="estilosProductos">
+            <figcaption>&#127922; Cluedo Clásico &#127922;</figcaption>
+            <p class="autorProducto">&#127917; Hasbro Gaming &#127917;</p>
+            <span class="spanPrecio">
+                <p class="precioProducto">25,49€</p> <img src="imagenes/cart-shopping-solid.svg" class="iconosSpanPrecio">
+            </span>
+        </section>
+        <section id="sectionProducto5">
+            <img src="imagenes/producto5.png" alt="producto5" class="estilosProductos">
+            <figcaption>&#127922; Monopoly Clásico &#127922;</figcaption>
+            <p class="autorProducto">&#127917; Hasbro Gaming &#127917;</p>
+            <span class="spanPrecio">
+                <p class="precioProducto">27,98€</p> <img src="imagenes/cart-shopping-solid.svg" class="iconosSpanPrecio">
+            </span>
         </section>
     </section>
 
